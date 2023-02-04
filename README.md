@@ -16,3 +16,18 @@
 
 Используется реализация из пакета **[sklearn](https://scikit-learn.org/stable/#)**
 
+### Тесты
+
+- Папка train
+    - /data содержит 1869 кадров
+    - /cls_labels.csv → разметка для классификации состояния ковша экскаватора
+        - file_path - имя кадра из /data
+        - label - метка класса
+    - /labels.json → Разметка экскаватора ковша и зубьев  в формате COCO
+- Папка test
+    - /data содержит 801 кадр
+    - /submission_example.csv → пример ответа, который принимает Kaggle
+        - Id - имя кадра из /data
+        - Predicted - метка класса состояния ковша экскаватора
+        
+**[Просмотр разметки](https://drive.google.com/drive/folders/1jFxVI21gppAwcf0K4LKUyMr59SY6wude?usp=sharing)**
